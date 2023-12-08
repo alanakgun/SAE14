@@ -1,0 +1,345 @@
+*{
+    margin: 100;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Barre Menu*/
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0, 0, 0.5);
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+/* Acceuil */
+
+#Accueil{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0, 0, 0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#Accueil::before{
+    content: "";
+    position:absolute;
+    top: 0;
+    right: 0;
+    background: url("IMG_0015.jpg") no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    align-items:center;
+    position: absolute;
+    top: 30%;
+}
+
+.headings{
+    font-family: century;
+    font-size: 3;
+    text-align: center;
+    margin: 20px 10px;
+}
+
+/* Section About me */
+
+#présentation{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 575px;
+    height: 400px;
+}
+#Intro{
+    display:flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+
+#Intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#Intro h3{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#Intro h4{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+
+#contact{
+    background: #f1f1f1;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.card{
+    background: #2f3542;
+    padding: 0 20px;
+    margin: 0 10px;
+    width: calc(33% - 20px);
+    height: 200px;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    padding-top: 4%;
+}
+
+.card-icon{
+    font-size: 28px;
+    background: #ff6348;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    transition: 0.3 linear;
+    padding-top: 4%;
+}
+
+.card:hover .card-icon{
+    background: none;
+    color: #ff6348;
+    transform: scale(1.6);
+}
+    
+.card p{
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+.card:hover p{
+    max-height: 40px;
+    opacity: 1;
+}
+
+@media screen and (max-width:800px) {
+    .contact-info{
+        flex-direction: column;
+    }
+    .card{
+       width: 100%;
+       max-width: 300px;
+       margin: 10px 0; 
+    }
+}
+
+
+/*************************************************Centre d'intérêt*****************************************/
+
+/*Body */
+
+*{
+    margin: 100;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Menu */
+
+.navbar2{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0,0, 0, 0.1);
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.navbar2 ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar2 ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.navbar2 ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+
+.navbar2 ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+/* Activité */ 
+#Activité2{
+    display: flex;
+    flex-direction: column;
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#Activité2::before{
+    content: "";
+    position:absolute;
+    top: 0;
+    right: 0;
+    background: url("Stade-Orange-Velodrome-match-©Orange-Velodrome-1920x960.jpeg") no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    align-items:center;
+    position: absolute;
+    top: 30%;
+}
+
+.headings2{
+    font-family: century;
+    font-size: 3;
+    text-align: center;
+    margin: 20px 10px;
+}
+
+/* Activity */ 
+
+#Présentation2{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+
+}
+
+#pic2{
+    display: flex;
+}
+#pic2 img{
+    height: 400px;
+    width: 575px;
+}
+
+#Intro2{
+    display:flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+
+#Intro2 h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Photo */
+
+#Photos2{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0, 0,5);
+    color: black;
+    align-items: center;
+    padding: 20px;
+}
+
+.gallery2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.gallery2 img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+}
